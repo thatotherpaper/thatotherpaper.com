@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+  <name>Austin Public Library System</name>
+  <description><![CDATA[Does not include state- or university-level libraries.]]></description>
+  <NetworkLink>
+    <Url>
+      <name>Austin Public Library System</name>
+      <href>http://maps.google.com/maps/ms?f=q&amp;hl=en&amp;geocode=&amp;ie=UTF8&amp;msa=0&amp;msid=105215733793421689425.000439b6ed4babea00594&amp;output=kml</href>
+    </Url>
+  </NetworkLink>
+</Document>
+</kml>

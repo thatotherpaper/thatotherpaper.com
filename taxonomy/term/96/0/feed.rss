@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://thatotherpaper.com" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>That Other Paper - Tim Taliaferro</title>
+ <link>http://thatotherpaper.com/taxonomy/term/96/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Stories of Woe first runner-up</title>
+ <link>http://thatotherpaper.com/austin/stories_of_woe_first_runner_up</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://thatotherpaper.com/austin/stories_of_woe_first_runner_up&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://thatotherpaper.com/austin/stories_of_woe_first_runner_up#comments</comments>
+ <category domain="http://thatotherpaper.com/authors/tim_taliaferro">Tim Taliaferro</category>
+ <pubDate>Mon, 12 Feb 2007 20:20:26 +0000</pubDate>
+ <dc:creator>That Other Paper</dc:creator>
+ <guid isPermaLink="false">365 at http://thatotherpaper.com</guid>
+</item>
+<item>
+ <title>Z one and only: Z&#039;Tejas</title>
+ <link>http://thatotherpaper.com/austin/reviews/ztejas</link>
+ <description>&lt;p&gt;Z&amp;#8217;Tejas is an Austin original dating back to 1989, and few restaurants will win over your palette and your debit card as easily.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://thatotherpaper.com/austin/reviews/ztejas&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://thatotherpaper.com/austin/reviews/ztejas#comments</comments>
+ <category domain="http://thatotherpaper.com/authors/tim_taliaferro">Tim Taliaferro</category>
+ <category domain="http://thatotherpaper.com/tags/venues/restaurants">Restaurants</category>
+ <category domain="http://thatotherpaper.com/tags/venues/happy_hour">Happy Hour</category>
+ <category domain="http://thatotherpaper.com/tags/venues/margaritas">Margaritas</category>
+ <category domain="http://thatotherpaper.com/tags/cuisine/tex_mex">Tex-Mex</category>
+ <category domain="http://thatotherpaper.com/tags/rating/4">4</category>
+ <category domain="http://thatotherpaper.com/tags/price/3">3</category>
+ <pubDate>Mon, 25 Dec 2006 06:00:00 +0000</pubDate>
+ <dc:creator>That Other Paper</dc:creator>
+ <guid isPermaLink="false">57 at http://thatotherpaper.com</guid>
+</item>
+</channel>
+</rss>

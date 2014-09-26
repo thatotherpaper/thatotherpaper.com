@@ -1,0 +1,24 @@
+/* ........................................
+   ThatOtherPaper.com stylesheet | IE7 fixes
+   rev 2007.01.22
+   Copyright 2006-2007 Four Kitchen Studios
+   http://fourkitchens.com
+   ........................................ */
+
+code {
+	white-space: normal;
+	}
+
+ul.menu {
+	list-style: none !important;
+	}
+	ul.menu li {
+		list-style: none !important;
+		}
+	ul.menu li.expanded, 
+	ul.menu li.leaf, 
+	ul.menu li.collapsed {
+		list-style: none !important;
+		list-style-type: none !important;
+  		list-style-image: none !important;
+		}

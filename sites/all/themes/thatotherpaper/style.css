@@ -1,0 +1,1573 @@
+@CHARSET "UTF-8";
+@import url("style-book.css");
+@import url("slideshow.css");
+
+/* ........................................
+   ThatOtherPaper.com stylesheet
+      rev 2008.03.11
+   Copyright 2006-2007 Four Kitchen Studios
+      http://fourkitchens.com
+   ........................................
+
+   ........................................
+   masthead blue           rgb(21,136,200)
+   search blue (dark)      rgb(10,63,96)
+
+   light blue 50%          rgb(138,196,228)
+   x-light blue 70%        rgb(185,220,239)
+   xx-light blue 90%       rgb(232,243,250)
+
+   nav light blue          rgb(0,167,234)
+   nav dark blue           rgb(6,104,177)
+
+   nav light orange        rgb(244,201,0)
+   nav dark orange         rgb(230,99,27)
+
+   nav light red           rgb(222,0,35)
+   nav dark red            rgb(144,16,31)
+
+   nav light green         rgb(191,220,0)
+   nav dark green          rgb(98,157,28)
+
+   nav light purple        rgb(186,0,124)
+   nav dark purple         rgb(103,8,123)
+
+   nav light brown         rgb(150,100,0)
+   nav dark brown          rgb(90,50,0)
+
+   xxx-light gray          rgb(250,250,250)
+   xx-light gray           rgb(240,240,240)
+   x-light gray            rgb(220,220,220)
+   light gray              rgb(190,190,190)
+   med gray                rgb(160,160,160)
+   dark gray               rgb(100,100,100)
+   text gray               rgb(50,50,50)
+   ........................................ */
+
+
+/* ...................... */
+/* ..... typography ..... */
+
+body {
+  font-size: 62.5%; /* resets 1em to 10px */
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: rgb(50,50,50);
+  }
+
+.b, .strong { font-weight: bold; }
+.i, .em { font-style: oblique; }
+.u { text-decoration: underline; }
+.allcaps { text-transform: uppercase; }
+.smallcaps { font-variant: small-caps; }
+.dropcap {
+  font-family: Georgia, "Times New Roman", Times, serif;                    
+  color: rgb(21,136,200);
+  line-height: 80%;
+  float: left;
+  font-size: 5em;
+  margin-right: 10px;
+  text-transform: uppercase;
+  }
+
+.nob, .nostrong { font-weight: normal; }
+.noi, .noem { font-style: normal; }
+.nospacing { letter-spacing: 0px !important; }
+.rom { font-weight: normal !important; font-style: normal !important; text-decoration: none !important; }
+
+.small, small { font-size: .75em !important; }
+.big, big { font-size: 1.25em !important; }
+.huge { font-size: 1.5em !important; }
+
+.on { color: rgb(115,169,201) !important; } /* med blue */
+.off { color: rgb(160,160,160) !important; } /* dark gray */
+  .off a { color: rgb(160,160,160) !important; } /* dark gray */
+
+.lightgray { color: rgb(190,190,190); }
+.medgray { color: rgb(160,160,160); }
+.darkgray { color: rgb(100,100,100); }
+.black { color: rgb(0,0,0); }
+.red { color: rgb(190,0,0); }
+.green { color: rgb(98,157,28); }
+.blue { color: rgb(21,136,200); }
+
+code {
+  padding: 0;
+  background-color: rgb(240,240,240);
+  font-family: Monaco, Courier, monospace;
+  }
+  div.codeblock { /* class created by the Code Filter module */
+    margin: 10px 0;
+    }
+
+pre {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid rgb(100,100,100);
+  background-color: rgb(240,240,240);
+  line-height: 1.5em;
+  }
+  pre code { overflow: auto; }
+  pre.ascii_art_captcha {
+    border-color: rgb(138,196,228);
+    background-color: rgb(232,243,250);
+    font-size: .9em;
+    }
+
+acronym, abbr { border-bottom: 1px dashed rgb(100,100,100); cursor: help; }
+strike { text-decoration: line-through; color: rgb(100,100,100); }
+ins { color: rgb(190,0,0); text-decoration: none;}
+
+a { color: rgb(6,104,177); text-decoration: none; }
+a:hover { color: rgb(50,50,50); }
+
+img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  }
+div.image {
+  margin-bottom: 10px;
+  }
+
+h1, h2, h3, h4 {
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 1.15em;
+  }
+  h1 a, h2 a, h3 a, h4 a {
+    color: rgb(6,104,177) !important;
+    }
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+    color: rgb(50,50,50) !important;
+    text-decoration: none !important;
+    }
+h1 {
+  clear: both;
+  color: rgb(6,104,177);
+  font-size: 2em;
+  }
+h2 {
+  color: rgb(21,136,200);
+  font-size: 1.5em;
+  }
+h3 {
+  color: rgb(50,50,50);
+  font-size: 1.25em;
+  }
+h4 {
+  font-size: 1em;
+  }
+
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.aligntop { vertical-align: top; }
+.alignmiddle { vertical-align: middle; }
+.alignbottom { vertical-align: bottom; }
+.floatleft { float: left; margin-right: 15px; margin-bottom: 10px; }
+.floatright { float: right; margin-left: 15px; margin-bottom: 10px; }
+
+.textleft { text-align: left; }
+.textright { text-align: right; }
+.textcenter, .center { text-align: center; }
+
+.last { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.noline { border-bottom: none !important; }
+.noborder { border: none !important; }
+.clear { clear: both; }
+.hide { display: none; }
+.space { margin-right: 10px; }
+.indent { margin-left: 15px; }
+
+hr {
+  clear: both;
+  width: 100%; 
+  height: 1px;
+  margin: 15px auto 15px auto;
+  padding: 0;
+  border: none;
+  background-color: rgb(21,136,200); /* Mozilla, Opera */
+  color: rgb(21,136,200); /* IE */
+  }
+  
+/* ..... end typography ..... */
+/* .......................... */
+
+
+/* ................. */
+/* ..... forms ..... */
+
+form { margin: 0; padding: 0; }
+  fieldset {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(21,136,200);
+    }
+  fieldset legend {
+    color: rgb(21,136,200);
+    font-weight: bold;
+    }
+  div.form-item {
+    margin: 0 0 15px 0;
+    padding: 0;
+    }
+    div.form-item div.form-item {
+      margin-bottom: 5px;
+      }
+  label {
+    margin: 1px 5px 3px 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: bold;
+    vertical-align: middle;
+    }
+  div.description {
+    margin-top: 2px;
+    padding-left: 10px;
+    background: url(images/arrow.gif) 0 2px no-repeat;
+    }
+  input, select, textfield, textarea {
+    margin: 0;
+    padding: 3px;
+    border: 1px solid rgb(21,136,200);
+    background-color: white;
+    font-size: 1em;
+    }
+  input, select, textfield {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    }
+  textarea {
+    font-family: Monaco, Courier, monospace;
+    line-height: 1.25em;
+    }
+
+  input[type ^="submit"], 
+  input.submit {
+    padding: 2px
+    }
+  input[type ^="submit"]:hover, 
+  input.submit:hover {
+    padding: 2px;
+    cursor: pointer;
+    background-color: rgb(21,136,200);
+    color: white;
+    font-size: 1em;
+    }
+
+  input.error, textarea.error {
+    border: 1px dashed rgb(190,0,0);
+    color: rgb(190,0,0);
+    }
+
+/* ..... end forms ..... */
+/* ..................... */
+
+
+/* ............................ */
+/* ..... drupal.css fixes ..... */
+
+table {
+  border-collapse: separate;
+  }
+
+/* ..... end drupal.css fixes ..... */
+/* ................................ */
+
+
+/* ........................... */
+/* ..... global elements ..... */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black url("images/body.bg.gif") top repeat-y;
+  }
+
+#outerWrapper {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  background: white url(images/outerWrapper.bg.gif) top left repeat-y;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  }
+
+/* ..... end global elements ..... */
+/* ............................... */
+
+
+/* ........................... */
+/* ..... header elements ..... */
+
+#header {
+  width: 900px;
+  height: 120px;
+  background: black url(images/header.bg.night.gif) top left no-repeat;
+  }
+
+  #skyline {
+    width: 900px;
+    height: 120px;
+    background: url(images/header.skyline.night.gif) bottom no-repeat;
+    color: white;
+    }
+
+    #headerLeft {
+      float: left;
+      margin: 10px 0 0 10px;
+      width: 285px;
+      height: 80px;
+      }
+      div.logo {
+        margin-bottom: 5px;
+        }
+
+    #headerRight {
+      float: right;
+      padding: 5px 5px 5px 0;
+      width: 290px;
+      height: 90px;
+      font-size: 1em;
+      text-align: right;
+      }
+      #buzzworthy {
+        }
+        #buzzworthy h2 {
+          margin: 0;
+          padding: 0 0 2px 5px;
+          border-bottom: 1px solid rgb(144,16,31);
+          border-left: 5px solid rgb(144,16,31);
+          color: white;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 1.25em;
+          text-align: left;
+          }
+        #buzzworthy ul li { /* div.list-item ul */
+          float: right;
+          margin: 1px 0 0 5px;
+          }
+          #buzzworthy ul li a {
+            border-right: 5px solid rgb(144,16,31);
+            color:  rgb(191,220,0) !important;
+            font-weight: bold;
+            }
+          #buzzworthy ul li a:hover {
+            border-right: 5px solid rgb(222,0,35);
+            background-color: rgb(144,16,31);
+            color: white !important;
+            }
+
+#subheader {
+  width: 900px;
+  height: 30px;
+  background: rgb(6,104,177) url(images/subheader.bg.gif) top left repeat-x;
+  }
+  #subheader #primary {
+    }
+    #subheader ul {
+      list-style: none;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      }
+      #subheader ul li {
+        float: left;
+        display: inline;
+        white-space: nowrap;
+        padding: 0 0 0 5px;
+        margin: 3px 0 0 0;
+        }
+      #subheader ul li:hover { 
+        }
+        #subheader ul li a {
+          float: left;
+          display: block;
+          padding: 4px;
+          font-weight: bold;
+          color: white;
+          text-decoration: none;
+          font-size: 1.3em;
+          }
+        #subheader ul li:hover a {
+          background-color: rgb(6,104,177);
+          }
+
+/*..... search bar .....*/
+
+  #search-theme-form { /* form */
+    float: right;
+    width: 300px;
+    height: 27px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    background: url(images/search_theme_form.bg.gif) top right no-repeat;
+    text-align: right;
+    }
+    #search-theme-form #search { /* inner div, .container-inline from drupal.css*/
+      }
+      #search-theme-form #search div.form-item {
+        margin: 0 5px 0 0;
+        }
+        #edit-search-theme-form-keys {
+          width: 100px;
+          margin: 0;
+          padding: 2px 3px;
+          background: rgb(80,80,80) url(images/search_theme_form_keys.bg.gif) bottom left repeat-x;
+          border-top: 1px solid rgb(20,20,20); /* dark */
+          border-left: 1px solid rgb(20,20,20); /* dark */
+          border-bottom: 1px solid rgb(150,150,150); /* light */
+          border-right: 1px solid rgb(150,150,150); /* light */
+          color: black;
+          font-size: 1.15em;
+          vertical-align: middle;
+          }
+          #edit-search-theme-form-keys:focus {
+            background: white;
+            }
+        #search-theme-form input.form-submit { /* search button */
+          background-color: rgb(21,136,200);
+          color: white;
+          margin-right: 5px;
+          vertical-align: middle;
+          }
+          #search-theme-form input.form-submit:hover {
+            background: rgb(185,220,239);
+            color: rgb(21,136,200);
+            }
+
+/* Hidden until new search box theme is implemented
+    #search-theme-form-go {
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: none;
+      vertical-align: middle;
+      }
+*/
+
+/* ..... end header elements ..... */
+/* ............................... */
+
+
+/* .......................................... */
+/* ..... columnCenter (content wrapper) ..... */
+
+#columnCenter {
+  /* columnLeft = 140px wide, includes some buffer */
+  /* left point: 150px */
+  float: left;
+  width: 600px;
+  margin: 0 0 0 150px;
+  background: white;
+  }
+* html #columnCenter { /* IE 5/6 double float-margin fix */
+  display: inline;
+  }
+  #columnCenter div.block {
+    margin: 0 !important;
+    }
+
+#promo {
+  margin: 5px auto;
+  line-height: 0;
+  }
+
+#breadcrumb {
+  padding: 3px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(138,196,228);
+  }
+
+/* ..... end columnCenter (content wrapper) ..... */
+/* .............................................. */
+
+
+/* .................... */
+/* ..... messages ..... */
+
+div.help, div.messages {
+  min-height: 18px;  /* prevents the divs from cutting off the icon (rare) */
+  margin-bottom: 10px;
+  padding: 5px 5px 0 28px;
+  line-height: 1.25em;
+  }
+  div.help p, div.help ul, 
+  div.messages p, div.messages ul {
+    margin-top: 0;
+    margin-bottom: 5px;
+    }
+
+div.help {
+  background: rgb(255,252,216) url(images/icon_help.png) 5px 4px no-repeat;
+  border: 1px solid rgb(255,240,60);
+  }
+  div.help ul li {
+    list-style-image: url(images/bullet_dot_yellow.png);
+    }
+  div.more-help-link {
+    margin-bottom: 5px;
+    }
+
+div.messages {
+  background: rgb(212,239,204) url(images/icon_success.png) 5px 4px no-repeat;
+  border: 1px solid rgb(41,174,0);
+  }
+  div.status {
+    }
+    div.status ul li {
+      }
+  div.error {
+    background: rgb(242,204,204) url(images/icon_error.png) 5px 4px no-repeat;
+    border: 1px solid rgb(190,0,0);
+    }
+    div.error ul li {
+      list-style-image: url(images/bullet_dot_red.png);
+      }
+
+/* ..... end messages ..... */
+/* ........................ */
+
+
+/* ................ */
+/* ..... main ..... */
+
+#main {
+  margin: 0 0 10px 0;
+  padding: 10px 0 0 0; /* perhaps temporary */
+  font-size: 1.25em;
+  }
+
+  #main h2.title {
+    font-size: 2em; /* match h1 size */
+    }
+
+  div.help {
+    }
+
+  #main-inner {
+    }
+    #main-inner a {
+      color: rgb(98,157,28);
+      }
+    #main-inner a:hover {
+      color: rgb(21,136,200);
+      text-decoration: underline;
+      }
+    #main-inner p, #main-inner blockquote, #main-inner ul, #main-inner ol {
+      line-height: 1.5em;
+      }
+    #main-inner p {
+      margin: 0 0 10px 0;
+      }
+    #main-inner blockquote {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 1.1em;
+      color:  rgb(100,100,100);
+      padding: 10px 10px 0px 35px;
+      margin: 15px 35px 15px 0;
+      background: url(images/blockquote_marks.png) top left no-repeat;
+      } 
+      #main-inner blockquote cite {
+        display: block;
+        font-size: .75em;
+        }
+    #main-inner table {
+      overflow: scroll;
+      }
+      
+    #main-inner div.pullquote-right {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      float: right;
+      width: 225px;
+      font-size: 1.3em;
+      padding: 10px 0;
+      margin: 10px;
+      text-align: center;
+      border-top: 5px double rgb(21,136,200);
+      border-bottom: 5px double rgb(21,136,200);
+      }
+      
+    #main-inner div.pullquote-left {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      float: left;
+      width: 225px;
+      font-size: 1.3em;
+      padding: 10px 0;
+      margin: 10px 20px 10px 10px;
+      text-align: center;
+      border-top: 5px double rgb(21,136,200);
+      border-bottom: 5px double rgb(21,136,200);
+      }
+
+    /* tab navigation */
+    #tabs {
+      font-size: .9em;
+      }
+      #tabs ul li a {
+        color: rgb(6,104,177) !important;
+        }
+      #tabs ul li a:hover {
+        text-decoration: none !important;
+        }
+      #tabs ul li.active a {
+        color: rgb(50,50,50) !important;
+        }
+    
+      /* tab navigation - primary */
+      ul.primary {
+        margin: 10px 0;
+        padding: 0 5px;
+        border-bottom: 1px solid rgb(138,196,228);
+        }
+        ul.primary li {
+          }
+          ul.primary li a {
+            margin: 0 2px 0 0;
+            padding: 0 5px;
+            background-color: rgb(232,243,250);
+            border: 1px solid rgb(138,196,228);
+            border-bottom: none;
+            }
+          ul.primary li a:hover {
+            background-color: white;
+            border-color: rgb(138,196,228);
+            color: rgb(50,50,50) !important;
+            }
+          ul.primary li.active a {
+            background-color: white;
+            border-color: rgb(138,196,228);
+            border-bottom-color: white;
+            }
+    
+      /* tab navigation - secondary */
+      ul.secondary {
+        margin: 0 10px 10px 10px;
+        padding: 0 0 5px 0;
+        border-bottom: 1px solid rgb(185,220,239);
+        }
+        ul.secondary li {
+          white-space: nowrap;
+          border-color: rgb(185,220,239);
+          line-height: 1.75em;
+          }
+          ul.secondary li a {
+            padding: 2px 5px;
+            }
+          ul.secondary li a:hover {
+            background-color: rgb(232,243,250);
+            }
+          ul.secondary li a.active {
+            background-color: rgb(232,243,250);
+            border-bottom: 2px solid rgb(185,220,239);
+            }
+
+    #content-bottom {
+      margin-top: 50px;
+      }
+      #content-bottom-gads-left {
+        float: left;
+        width: 250px;
+        margin-right: 50px;
+        }
+      #content-bottom-gads-right {
+        float: left;
+        width: 300px;
+        }
+
+/* ..... end main ..... */
+/* .................... */
+
+
+/* ............... */
+/* ..... box ..... */
+
+div.box {
+  margin: 20px 0;
+  padding: 0;
+  }
+
+/* ..... end box ..... */
+/* ................... */
+
+
+/* ................ */
+/* ..... node ..... */
+
+div.node {
+  clear: both;
+  margin: 0 0 30px 0;
+  padding: 0;
+  }
+  div.node-unpublished {
+    padding-top: 30px;
+    background: rgb(248,229,229) url(images/node_bg_unpublished.gif) top left no-repeat;
+    }
+  div.preview {
+    padding-top: 40px;
+    background: url(images/node_bg_preview.gif) top left no-repeat;
+    }
+    div.preview div.node {
+      background-color: rgb(250,250,227);
+      }
+    div.preview div.node-unpublished {
+      padding-top: 0;
+      background-image: none;
+      }
+
+  div.submitted { /* author and date */
+    margin: 0 0 10px 0;
+    padding-top: 4px;
+    border-top: 1px solid rgb(138,196,228);
+    color: rgb(100,100,100);
+    font-size: .9em;
+    text-transform: uppercase;
+    }
+    div.submitted a {
+      color: rgb(21,136,200) !important;
+      }
+
+  div.readmore {
+    margin-bottom: 5px;
+    font-size: 1.25em;
+    font-weight: bold;
+    }
+    div.readmore a {
+      color: rgb(21,136,200) !important;
+      }
+
+  div.links { /* add comment, share, etc. */
+    clear: both;
+    margin: 10px 0 0 0;
+    padding: 2px 0;
+    border-top: 1px dotted rgb(138,196,228);
+    border-bottom: 1px solid rgb(138,196,228);
+    }
+    div.links a {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      color: rgb(21,136,200) !important;
+      }
+    div.links a.comment_comments,
+    div.links a.comment_add, 
+    div.links a.forward_links {
+      padding-left: 22px;
+      background-position: 2px center;
+      background-repeat: no-repeat;
+      }
+    div.links a.comment_comments {
+      background-image: url(images/icon_comments.png);
+      }
+    div.links a.comment_add {
+      background-image: url(images/icon_comment_add.png);
+      }
+    div.links a.forward_links {
+      background-image: url(images/icon_forward.png);
+      }
+
+    div.links ul.links {
+      }
+      div.links ul.links li {
+        margin: 0 10px 0 0;
+        padding: 0;
+        }
+        div.links ul.links li a {
+          font-weight: bold;
+          }
+
+    div.links ul.sharelinks {
+      float: right;
+      display: inline;
+      margin: 0;
+      padding: 0;
+      }
+      div.links ul.sharelinks li {
+        display: inline;
+        list-style: none;
+        margin: 0 3px 0 0;
+        padding: 0;
+        }
+        div.links ul.sharelinks li a img {
+          vertical-align: middle;
+          }
+
+/* ..... end node ..... */
+/* .................... */
+
+
+
+/* .................. */
+/* ..... forums ..... */
+
+div.forum-topic-navigation {
+  clear: both;
+  background: rgb(232,243,250);
+  border-color: rgb(185,220,239);
+  }
+  div.forum-topic-navigation a {
+    color: rgb(21,136,200) !important;
+    }
+
+/* ..... end forums ..... */
+/* ...................... */
+
+
+
+/* .......................... */
+/* ..... content styles ..... */
+
+div.content h2, div.content h3 {
+  margin: 15px 0 10px 0;
+  }
+  
+div.bluebox {
+  background: rgb(232,243,250);
+  border: 1px solid rgb(138,196,228);
+  margin: 10px 20px;
+  padding: 5px 10px 0 10px;
+  } 
+
+/* infobox styles */
+div.infoboxes { /* wrapper for column of infoboxes */
+  clear: right;
+  float: right;
+  width: 195px;
+  background-color: white;
+  }
+table.infobox, table.infoboxlist, div.rating-price, img.tagbox {
+  clear: right;
+  float: right;
+  margin-bottom: 5px;
+  padding: 0;
+  }
+table.infobox, table.infoboxlist {
+  width: 175px;
+  border: 1px solid rgb(160,160,160);
+  color: rgb(100,100,100);
+  font-size: .9em;
+  }
+  table.infobox th, table.infobox td, 
+  table.infoboxlist th, table.infoboxlist td {
+    padding: 0px 2px;
+    border: none;
+    vertical-align: top;
+    }
+  table.infobox th, table.infoboxlist th {
+    width: 45px;
+    padding-top: 1px;
+    color: rgb(160,160,160);
+    text-align: right;
+    font-size: .9em;
+    font-weight: normal;
+    text-transform: uppercase;
+    }
+table.capsulelink {
+  background-color: rgb(232,243,250);
+  border: 1px solid rgb(138,196,228);
+  }
+  table.capsulelink th {
+    color: rgb(21,136,200);
+    font-size: .75em;
+    font-weight: bold;
+    }
+table.infoboxlist { /* menu, amenities, extras, etc. */
+  }
+  table.infoboxlist th {
+    width: 100%;
+    text-align: left;
+    }
+  table.infoboxlist ul {
+    margin: 0;
+    padding: 0;
+    }
+    table.infoboxlist ul li {
+      list-style: none;
+      margin: 0 0 5px 0;
+      padding: 5px 0 0 10px;
+      text-indent: -10px;
+      border-top: 1px solid rgb(160,160,160);
+      line-height: 1.15em;
+      }
+div.rating-price {
+  text-align: center;
+  line-height: 0em;
+  }
+  img.rating, img.price {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(160,160,160);
+    }
+  img.price {
+    margin-left: 5px;
+    }
+img.tagbox { /* image tags */
+  border: 1px solid rgb(160,160,160);
+  }
+
+div.blurb {
+  display: table;
+  margin: 0 0 10px 0;
+  padding: 0 0 5px 0;
+  border-bottom: 1px dashed rgb(21,136,200);
+  color: rgb(100,100,100);
+  font-size: 1.1em;
+  font-style: italic;
+  letter-spacing: .5px;
+  }
+
+div.image {
+  padding: 5px;
+  background-color: rgb(232,243,250);
+  border: 1px solid rgb(138,196,228);
+  text-align: center;
+  }
+  div.image img {
+    }
+  div.image div.caption {
+    margin: 3px 0 0 0;
+    color: rgb(100,100,100);
+    text-align: left;
+    font-size: .75em;
+    font-weight: bold;
+    line-height: 1.15em;
+    }
+  div.image div.caption cite {
+    float: right;
+    margin-left: 5px;
+    text-align: right;
+    color: rgb(160,160,160);
+    font-size: .9em;
+    }
+  div.image div.caption cite img {
+    margin-left: 5px;
+    vertical-align: middle;
+    }
+
+div.break { /* template: [ * * * ] bar */
+  margin: 20px 0 15px 0;
+  text-align: center;
+  color: rgb(160,160,160);
+  letter-spacing: 25px;
+  font-size: 1.5em;
+  }
+
+div.video {
+  margin: 30px auto;
+  padding: 5px 10px;
+  background-color: rgb(232,243,250);
+  border: 1px solid rgb(138,196,228);
+  text-align: center;
+  }
+
+div.sidebar {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid rgb(138,196,228);
+  background-color: rgb(232,243,250);
+  font-size: .9em;
+  }
+  div.sidebar p.title {
+    margin: 0 0 5px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid rgb(138,196,228);
+    text-align: center;
+    }
+
+div.note, div.columntitle, #admin_section {
+  margin: 20px 0 10px 0;
+  padding: 5px;
+  border-width: 1px 10px;
+  border-style: solid;
+  border-color: rgb(138,196,228);
+  background-color: rgb(232,243,250);
+  font-size: .9em;
+  line-height: 1.25em;
+  }
+div.columntitle {
+  margin-top: 0;
+  font-size: .75em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  }
+
+#pager { /* numbers for multi-page spreads */
+  width: 90%;
+  margin: 15px auto 10px auto;
+  text-align: center;
+  color: rgb(21,136,200);
+  font-weight: bold;
+  font-size: .9em;
+  }
+  #pager a:link, #pager a:visited, #pager a:active {
+    margin: 0 2px;
+    padding: 1px 4px;
+    border: 1px solid rgb(138,196,228);
+    color: rgb(21,136,200) !important;
+    background-color: rgb(232,243,250);
+    }
+  #pager a:hover {
+    background-color: white;
+    border-color: rgb(21,136,200);
+    color: rgb(6,104,177) !important;
+    text-decoration: none;
+    }
+
+/* tables */
+table.wide {
+  border-collapse: collapse;
+  width: 100%;
+  }
+  table.wide td {
+    padding: 3px;
+    }
+  table.wide thead td {
+    border-bottom: 2px solid rgb(190,190,190);
+    }
+  table.wide tbody td {
+    background-color: rgb(250,250,250);
+    border-bottom: 1px solid rgb(220,220,220);
+    }
+
+table.contactinfo {
+  }
+  table.contactinfo th, table.contactinfo td {
+    padding: 5px;
+    vertical-align: top;
+    }
+  table.contactinfo th {
+    padding-top: 8px;
+    border: none;
+    text-align: right;
+    color: rgb(21,136,200);
+    font-size: .75em;
+    text-transform: uppercase;
+    }
+
+table tr.bluebg td {
+  background-color: rgb(232,243,250);
+  }
+table tr.thickbottom td {
+  border-bottom-width: 2px;
+  }
+table tr.buffertop td {
+  padding-top: 10px;
+  }
+
+div.picture, div.user_badges {
+  clear: right;
+  float: right;
+  width: 85px;
+  margin: 0 0 5px 15px;
+  text-align: right;
+  }
+div.user_badges {
+  }
+  div.user_badges img {
+    margin-bottom: 2px;
+    }
+
+/* ..... end content styles ..... */
+/* .............................. */
+
+
+/* .......................... */
+/* ..... comment styles ..... */
+
+div.comment {
+  margin: 0 0 15px 0;
+  }
+  div.comment div.new {
+    float: left;
+    margin-right: 10px;
+    padding: 2px 4px;
+    background-color: rgb(190,0,0);
+    color: white;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    }
+  div.comment div.submitted, div.comment div.links {
+    font-size: .9em;
+    }
+    div.comment div.submitted a, div.comment div.links a {
+      color: rgb(98,157,28) !important;
+      }
+  div.comment div.submitted {
+    margin-bottom: 2px;
+    border: none;
+    }
+  div.comment div.comment-inner {
+    padding-top: 5px;
+    border: 1px solid rgb(191,220,0);
+    border-right: none;
+    }
+    div.comment div.comment-inner div.content {
+      margin: 0 0 15px 0;
+      padding: 0 5px;
+      }
+  div.comment div.links {
+    padding-left: 5px;
+    border: none;
+    border-top: 1px dotted rgb(191,220,0);
+    }
+
+/* ..... end comment styles ..... */
+/* .............................. */
+
+
+/* ................................ */
+/* .... common element styles ..... */
+
+/* appears in list views and blocks */
+div.item-list ul {
+  margin: 0;
+  padding: 0;
+  }
+  div.item-list ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+  div.item-list ul li a {
+    display: block;
+    padding: 2px 5px;
+    line-height: 1.15em;
+    }
+  div.item-list ul li a:hover {
+    text-decoration: none !important;
+    }
+
+/* .... end common element styles ..... */
+/* .................................... */
+
+
+/* .................. */
+/* ..... blocks ..... */
+
+div.block {
+  margin: 0 0 10px 0;
+  }
+  div.block h2, div.block h3 {
+    margin: 0;
+    padding: 2px 5px;
+    background: rgb(21,136,200) url(images/block.title.bg.gif) left center repeat-x;
+    color: white;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    }
+  div.block h2 {
+    }
+  div.block h3 {
+    margin: 5px 0 0 0;
+    }
+  div.block div.content {
+    padding: 0;
+    }
+
+  div.block form {
+    padding: 5px;
+    background-color: rgb(232,243,250);
+    border-left: 5px solid rgb(185,220,239);
+    }
+    div.block form div {
+      text-align: left;
+      }
+    div.block form label {
+      font-size: .9em;
+      line-height: 1em;
+      }
+    div.block form input {
+      padding: 2px 5px;
+      font-size: 1em;
+      }
+    div.block form input.form-text {
+      width: 100px;
+      }
+
+  div.block div.item-list ul, 
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgb(185,220,239);
+    }
+    div.block div.item-list ul li, 
+    ul.menu li {
+      border-top: 1px solid rgb(208,231,244);
+      background: rgb(232,243,250) url(images/menu.bg.gif) top left no-repeat;
+      }
+      div.block div.item-list ul li a, 
+      ul.menu li a {
+        display: block;
+        margin: 0;
+        padding: 1px 3px;
+        background: none;
+        border-left: 5px solid rgb(185,220,239);
+        color: rgb(6,104,177);
+        }
+      div.block div.item-list ul li a:hover, 
+      ul.menu li a:hover {
+        background-color: rgb(185,220,239) !important;
+        border-color: rgb(21,136,200);
+        color: rgb(50,50,50) !important;
+        }
+
+  ul.menu {
+    list-style: none;
+    }
+    ul.menu li.expanded ul {
+      padding-left: 5px;
+      border: none;
+      background-color: rgb(230,230,230);
+      }
+    ul.menu li.expanded, 
+    ul.menu li.leaf, 
+    ul.menu li.collapsed {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      }
+      ul.menu li a {
+        padding-right: 10px;
+        background-position: right 3px;
+        background-repeat: no-repeat;
+        }
+    ul.menu li a.active {
+      color: rgb(50,50,50);
+      font-weight: bold;
+      }
+    ul.menu li.expanded a {
+      background-image: url(images/menu.expanded.gif);
+      }
+    ul.menu li.leaf a {
+      background-image: none;
+      }
+    ul.menu li.collapsed a {
+      background-image: url(images/menu.collapsed.gif);
+      }
+
+/* nav blocks */
+#columnLeft div.block h2, #columnLeft div.block h3 {
+  height: 10px;
+  padding: 5px 5px;
+  background: transparent url(images/nav.block.default.gif) no-repeat top left;
+  color: white;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  }
+#columnLeft div.block div.content {
+  margin: 0 15px 5px 0; /* width: 125px */
+  padding: 0;
+  background: black;
+  color: rgb(160,160,160);
+  }
+  #columnLeft div.block div.item-list ul {
+    border: none;
+    background: black url(images/bg.grad.black.gif) no-repeat top left;
+    border-top: 1px solid rgb(50,50,50);
+    }
+    #columnLeft div.block div.item-list ul li {
+      border: none;
+      background: none;
+      }
+      #columnLeft div.block div.item-list ul li a {
+        display: block;
+        margin: 0;
+        padding: 2px 5px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgb(50,50,50);
+        color: rgb(220,220,220);
+        }
+      #columnLeft div.block div.item-list ul li a:hover {
+        background: rgb(50,50,50) !important;
+        border-color: rgb(220,220,220);
+        color: white !important;
+        }
+
+/* flickr block */
+div.block-flickr {
+  }
+  div.block-flickr div.content {
+    padding-bottom: 5px !important;
+    }
+  div.block-flickr-title img {
+    display: block;
+    }
+  img.flickr {
+    width: 50px;
+    margin: 5px 3px 0 5px;
+    padding: 0;
+    }
+  a img.flickr {
+    border: 1px solid rgb(100,100,100);
+    }
+  a:hover img.flickr {
+    border-color: rgb(220,220,220);
+    }
+
+/* weather module block */
+
+div.block-weather {
+  }
+  div.block-weather img.weather-icon {
+    float: left;
+    margin-right: 5px;
+    }
+  div.block-weather div.weather-text {
+    margin-left: 25px;
+    margin-top: 30px;
+    }
+    div.block-weather div.weather-temp {
+      margin-bottom: 2px;
+      font-size: 1.25em;
+      }
+    div.block-weather div.weather-sun {
+      display: none;
+      font-size: 1em;
+      font-weight: normal;
+      color: rgb(190,190,190); /* light gray */
+      }
+
+/* login block */
+form#user-login-form div.item-list ul {
+  padding: 0;
+  margin: 5px 0 0 0;
+  list-style: none;
+  border: none;
+  }
+
+form#user-login-form div.item-list ul li {
+  margin: 3px 0 0 0;
+  padding: 0;
+  border: none;
+  background: none;
+  }
+
+form#user-login-form div.item-list ul li a {
+  padding: 0;
+  margin: 0;
+  border: none;
+  }
+
+/* ..... end blocks ..... */
+/* ...................... */
+
+
+/* ............................ */
+/* ..... columnLeft (nav) ..... */
+
+#columnLeft {
+  /* total width: 140px */
+  /* left point: 0px */
+  float: left;
+  width: 140px;
+  margin-left: -750px;
+  text-align: left;
+  }
+
+/* ..... end columnLeft (nav) ..... */
+/* ................................ */
+
+
+/* ....................... */
+/* ..... columnRight ..... */
+
+#columnRight {
+  /* total width: 150px = 130px + (5 + 15 padding) */
+  /* left point: 750px */
+  float: left;
+  width: 130px;
+  margin: 0 0 20px 0;
+  padding: 10px 5px 10px 15px;
+  }
+
+  #columnRight-gads {
+    width: 120px;
+    margin: 0 auto;
+    }
+
+/* ..... end columnRight ..... */
+/* ........................... */
+
+
+/* .......................... */
+/* ..... event elements ..... */
+
+div.event-start, div.event-end, div.event-tz {
+  display: none;
+  }
+
+/* ..... end event elements ..... */
+/* .............................. */
+
+
+/* .................. */
+/* ..... footer ..... */
+
+#footerTop {
+  clear: both;
+  width: 900px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  background: url(images/footerTop.gif) bottom no-repeat;
+  }
+  img#fklogo {
+    float: right;
+    margin: 15px 10px 0 0;
+    }
+#footer {
+  clear: both;
+  width: 890px; /* 890 + 10px padding = 900 */
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(8,47,71);
+  color: rgb(160,160,160);
+  font-size: 1em;
+  }
+  #footer ul.menu { 
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    }
+    #footer ul.menu li {
+      list-style: none;
+      display: inline;
+      margin: 0 0 0 5px;
+      padding: 0 0 0 8px;
+      background: none;
+      border: none;
+      border-left: 1px solid rgb(100,100,100);
+      }
+    #footer ul.menu li:first-child {
+      margin: 0;
+      padding: 0;
+      border: none;
+      }
+    #footer ul.menu li a {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: none;
+      color: rgb(160,160,160);
+      }
+    #footer ul.menu li a:hover,
+    #footer ul.menu li a.active {
+      background: none !important;
+      color: white !important;
+      font-weight: normal;
+      }
+
+/* ..... end footer ..... */
+/* ...................... */
+
+
+/* ............................... */
+/* ..... hide print elements ..... */
+
+#print_header, div.print_sourceurl, #print_footer {
+  display: none;
+  }
+
+/* ..... end hide print elements ..... */
+/* ................................... */
+
+
+/* =============================== */
+/* ..... UPDATE / SUPERCEDED ..... */
+/* =============================== */
+
+  div.navSection {
+    margin-bottom: 10px;
+    }
+    div.navSectionTitle img {
+      display: block;
+      }
+    div.navSection ul {
+      list-style: none;
+      margin: 0 15px 0 0; /* width: 125px */
+      padding: 0;
+      }
+    div.navSection ul li {
+      }
+      div.navSection ul li a:link, 
+      div.navSection ul li a:visited {
+        display: block;
+        padding: 3px;
+        color: white;
+        text-align: right;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        }
+      div.navSection ul li a:hover {
+        background-image: none;
+        }
+    ul.navSection_features { /* red */
+      }
+      ul.navSection_features li a:link, 
+      ul.navSection_features li a:active, 
+      ul.navSection_features li a:visited {
+        background: rgb(144,16,31) url(images/bg.grad.red.gif) no-repeat top left;
+        border-top: 1px solid rgb(144,16,31);
+        }
+      ul.navSection_features li a:hover {
+        border-color: rgb(222,0,35);
+        color: rgb(222,0,35) !important;
+        }
+    ul.navSection_columns { /* purple */
+      }
+      ul.navSection_columns li a:link, 
+      ul.navSection_columns li a:active, 
+      ul.navSection_columns li a:visited {
+        background: rgb(103,8,123) url(images/bg.grad.purple.gif) no-repeat top left;
+        border-top: 1px solid rgb(103,8,123);
+        }
+      ul.navSection_columns li a:hover {
+        border-color: rgb(186,0,124);
+        color: rgb(186,0,124) !important;
+        }
+    ul.navSection_itineraries { /* orange */
+      }
+      ul.navSection_itineraries li a:link, 
+      ul.navSection_itineraries li a:active, 
+      ul.navSection_itineraries li a:visited {
+        background: rgb(230,99,27) url(images/bg.grad.orange.gif) no-repeat top left;
+        border-top: 1px solid rgb(230,99,27);
+        }
+      ul.navSection_itineraries li a:hover {
+        border-color: rgb(244,201,0);
+        color: rgb(244,201,0) !important;
+        }
+    ul.navSection_comics { /* green */
+      }
+      ul.navSection_comics li a:link, 
+      ul.navSection_comics li a:active, 
+      ul.navSection_comics li a:visited {
+        background: rgb(98,157,28) url(images/bg.grad.green.gif) no-repeat top left;
+        border-top: 1px solid rgb(98,157,28);
+        }
+      ul.navSection_comics li a:hover {
+        border-color: rgb(191,220,0);
+        color: rgb(191,220,0) !important;
+        }
+    ul.navSection_cityguide { /* blue */
+      }
+      ul.navSection_cityguide li a:link, 
+      ul.navSection_cityguide li a:active, 
+      ul.navSection_cityguide li a:visited {
+        background: rgb(6,104,177) url(images/bg.grad.blue.gif) no-repeat top left;
+        border-top: 1px solid rgb(6,104,177);
+        }
+      ul.navSection_cityguide li a:hover {
+        border-color: rgb(0,167,234);
+        color: rgb(0,167,234) !important;
+        }

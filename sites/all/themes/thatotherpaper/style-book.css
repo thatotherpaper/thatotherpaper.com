@@ -1,0 +1,88 @@
+ /*..... Book module style (Style Guide - http://thatotherpaper.com/style) .....*/
+
+.book-navigation {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  }
+
+  .book-navigation ul.menu {
+    border-top: 2px solid #B9DCEF;
+    border-bottom: none;
+    margin-bottom: 20px;
+    }
+
+    .book-navigation ul li {
+      font-size: 1.1em;
+      font-family: Georgia, Times, serif!important;
+      background: none!important;
+      border: none!important;
+      }
+      
+      .book-navigation ul.menu li a {
+        border: none!important;
+        display: inline!important;
+        color: rgb(50,50,50)!important;
+        }
+        .book-navigation ul.menu li.leaf a:hover {
+          background: none!important;
+          text-decoration: none;
+          }
+
+    .book-navigation ul li.leaf {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      font-family: Georgia, Times, serif!important;
+      background: none!important;
+      border: none!important;
+      }
+      .book-navigation ul.menu li.leaf:hover {
+        background: none!important;
+        border: none!important;
+        }
+         
+        .book-navigation ul.menu li.collapsed {
+          font-family: Georgia, Times, serif!important;
+          background: none!important;
+          border: none!important;
+          }
+          .book-navigation ul.menu li.collapsed a:hover {
+            background: none!important;
+            border: none!important;
+            }
+ 
+  .book-navigation .page-links {
+    font-family: Georgia, Times, serif!important;
+    border-top: medium double #B9DCEF;
+    border-bottom: medium double #B9DCEF;
+    font-size: 1.2em;
+    padding: 10px;
+    }
+
+    .book-navigation .page-previous {
+      text-align: left;
+      width: 42%;
+      display: block;
+      float: left;
+      }
+  
+    .book-navigation .page-up {
+      margin: 0 5%;
+      width: 4%;
+      display: block;
+      float: left;
+      }
+    
+    .book-navigation .page-next {
+      text-align: right;
+      width: 42%;
+      display: block;
+      float: right;
+      }
+
+
+ 
+
+
+
+
+

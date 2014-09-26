@@ -1,0 +1,93 @@
+/* ........................................
+   ThatOtherPaper.com stylesheet | print
+   rev 2007.02.04
+   Copyright 2006-2007 Four Kitchen Studios
+   http://fourkitchens.com
+   ........................................ */
+
+#header, #subheader, #columnLeft, #columnRight, 
+#toolbar, #breadcrumbs, #mission, #message, #help, #tabs, 
+div.links, #comments, #footerTop, #footer, 
+#promo, #sellout_above {
+  display: none;
+  }
+
+#print_header, #print_footer, div.print_sourceurl {
+  display: block;
+  }
+#print_header, #print_footer {
+  clear: both;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.25em;
+  }
+  img#print_logo {
+    display: block;
+    margin: 0 auto;
+    }
+  div.print_sourceurl {
+    padding: 5px;
+    border-top: 1px solid rgb(160,160,160);
+    border-bottom: 1px solid rgb(160,160,160);
+    }
+    div.print_sourceurl.bottom {
+      margin-bottom: 10px;
+      }
+
+body, a:link, a:active, a:visited, a:hover, h1, h2, h3, h4 {
+  color: black !important;
+  }
+a {
+  text-decoration: underline !important;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  }
+
+#outerWrapper {
+  width: 600px;
+  background: white;
+  border: none;
+  }
+
+#columnCenter {
+  margin: 0;
+  padding: 0;
+  }
+  div.byline {
+    padding-bottom: 3px;
+    border-bottom: 1px solid black !important;
+    }
+  div.byline, div.byline a, div.byline a:hover {
+    color: black !important;
+    }
+    div.byline span {
+      background: none !important;
+      }
+  div.blurb {
+    border-bottom: 1px solid rgb(160,160,160);
+    }
+
+th {
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  color: rgb(50,50,50);
+  }
+tr.odd {
+  background-color: rgb(220,220,220);
+  }
+tr.even {
+  background-color: white;
+  }
+td {
+  padding: 5px;
+  }
+
+div.note {
+  padding: 5px;
+  background-color: rgb(220,220,220);
+  border: 1px solid rgb(100,100,100);
+  }

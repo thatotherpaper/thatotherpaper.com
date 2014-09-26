@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://thatotherpaper.com" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>That Other Paper - Scott Randall</title>
+ <link>http://thatotherpaper.com/taxonomy/term/579/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>My New Apartment</title>
+ <link>http://thatotherpaper.com/austin/my_new_apartment</link>
+ <description>&lt;p&gt;&lt;a href=&quot;/austin/my_new_apartment&quot;&gt;&lt;img class=&quot;floatright&quot; src=&quot;/files/new_apt_thumb.jpg&quot; alt=&quot;That Other Paper | Videos&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After years of sharing an apartment with a roommate, Scott Randall moved into a new place where he now lives alone. Sort of.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://thatotherpaper.com/austin/my_new_apartment&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://thatotherpaper.com/austin/my_new_apartment#comments</comments>
+ <category domain="http://thatotherpaper.com/authors/scott_randall">Scott Randall</category>
+ <category domain="http://thatotherpaper.com/topics/film">Film</category>
+ <category domain="http://thatotherpaper.com/tags/area/far_west">Far West</category>
+ <category domain="http://thatotherpaper.com/topics/videos">Videos</category>
+ <pubDate>Fri, 23 Mar 2007 17:46:49 +0000</pubDate>
+ <dc:creator>That Other Paper</dc:creator>
+ <guid isPermaLink="false">462 at http://thatotherpaper.com</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,61 @@
+/* ........................................
+   ThatOtherPaper.com stylesheet | IE6 fixes
+   rev 2007.01.22
+   Copyright 2006-2007 Four Kitchen Studios
+   http://fourkitchens.com
+   ........................................ */
+
+code {
+	white-space: normal;
+	}
+
+input {
+	line-height: 1em;
+	}
+input.submit:hover {
+	cursor: hand;
+	}
+
+#columnLeft, #columnRight {
+	overflow: hidden;
+	}
+
+#header ul li {
+	float: none;
+	margin-left: 0;
+	}
+
+#search_theme_form {
+	height: 28px;
+	padding: 2px 0 0 0;
+	}
+
+ul.menu {
+	list-style: none !important;
+	}
+	ul.menu li {
+		list-style: none !important;
+		}
+	ul.menu li.expanded, 
+	ul.menu li.leaf, 
+	ul.menu li.collapsed {
+		list-style: none !important;
+		list-style-type: none !important;
+  		list-style-image: none !important;
+		}
+		.navSection ul  li a, /* will obsolesce when sidebar moved to menu system */
+		ul.menu li a {
+			width: 95%;
+			}
+
+div.block form {
+	border: none;
+	}
+	div.block form label {
+		margin-bottom: 3px;
+		}
+
+#tabs {
+	width: 600px;
+	overflow: hidden;
+	}
